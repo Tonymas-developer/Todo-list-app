@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task List</title>
+  <link rel="stylesheet" href="./bootstrap-5.3/bootstrap.min.css">
+  <link rel="stylesheet" href="./fontawesome-free-6.4.0-web/css/all.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto my-4">
+        <div id="main" class="card">
+          <div class="card-body">
+            <h4 class="card-title">Task List</h4>
+            <div class="row border-bottom py-4 px-4">
+              <div class="col-lg-12">
+                <form id="task-form">
+                  <div class="mb-3">
+                    <input type="text" class="form-control border-0 border-bottom" placeholder="New Task" id="task"
+                      name="task">
+                  </div>
+                  <input type="submit" class="btn btn-primary" value="Add Task">
+                </form>
+              </div>
+            </div>
+
+            <div class="card-action mt-4">
+              <h5 id="task-title">Tasks</h5>
+              <div class="mb-3">
+                <input type="text" class="form-control border-top-0 border-start-0 border-end-0"
+                  placeholder="Filter Tasks" name="filter" id="filter">
+              </div>
+              <ol class="list-group list-group-numbered list-group-flush mb-3">
+                <!-- <li class="list-group-item list-group-item-action" >
+                  <div class="w-50 me-5 d-inline-block ms-3">Go to work</div>
+                  <d iv class="w-25 ms-5 d-inline-block text-end">
+                    <span class="me-5">
+                      <a href="" class="edit"><i class="fa fa-edit"></i></a>
+                    </span>
+                    <span>
+                      <a href="" class="delete text-danger"><i class="fa fa-close"></i></a>
+                    </span>
+                  </d>
+
+                </li> -->
+
+              </ol>
+              <a href="#" class="btn btn-dark clear-task">Clear Task</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="./bootstrap-5.3/popper.min.js"></script>
+  <script src="./bootstrap-5.3/bootstrap.min.js"></script>
+  <script src="./js/app.js"></script>
+</body>
+
+</html>
